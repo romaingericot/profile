@@ -1,8 +1,11 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700;900&display=swap');
 
-h1 {
+h1, h2, a {
   font-family: 'Roboto', sans-serif;
+}
+
+h1 {
   font-weight: 900;
   color: #0e0000;
   line-height: 1.3em;
@@ -10,7 +13,6 @@ h1 {
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
@@ -24,7 +26,6 @@ body {
 }
 
 a {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   text-decoration: none;
   color: #fd1015;
@@ -38,47 +39,28 @@ p {
   margin-bottom: 40px;
 }
 
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
 .img-circle {
   width: 180px;
   height: 180px;
   border-radius: 90px
 }
 
-.shadowed {
-  box-shadow: 5px 5px 4px black;
-}
-
-.container {
-  width: 700px;
-  margin: 40px auto;
-}
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
-
 .card-white {
+  margin: 20px auto;
   background-color: white;
-  padding: 40px;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  padding: 30px;
   border-radius: 4px;
-  margin: 20px 0px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
   text-align: center;
+}
+
+.shadowed {
+  box-shadow: 5px 5px 4px rgba(0,0,0,.1);
 }
 
 .highlighted {
@@ -93,9 +75,12 @@ p {
   }
 
 .list-inline {
-  display: inline;
   list-style: none;
   padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
 }
 
 .fab {
