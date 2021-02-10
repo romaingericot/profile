@@ -1,5 +1,4 @@
-# profile
-🎓  Teaching - 1-Hour Responsive Profile Page
+# 🎓  Teaching - 1-Hour Responsive Profile Page
 
 Rails app created by [Romain Géricot](https://www.romaingericot.fr).
 
